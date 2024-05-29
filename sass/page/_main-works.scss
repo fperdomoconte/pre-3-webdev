@@ -1,0 +1,124 @@
+/*Start - Work - grid*/
+.grid__container-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+        "title--works title--works title--works"
+        "works-1 works-2 works-3"
+        "works-4 works-5 works-6";
+    margin: 5% 10%;
+    background-color: $color-bg-main;
+    border: 1px solid black;
+    width: 100%;
+    column-gap: 5rem;
+    padding-bottom: 2rem;
+}
+
+.title--works {
+    grid-area: title--works;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.main__works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.works-1 {
+    grid-area: works-1;
+}
+
+.works-2 {
+    grid-area: works-2;
+}
+
+.works-3 {
+    grid-area: works-3;
+}
+
+.works-4 {
+    grid-area: works-4;
+}
+
+.works-5 {
+    grid-area: works-5;
+}
+
+.works-6 {
+    grid-area: works-6;
+}
+
+.grid__container-works {
+    div.grid__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.grid__item {
+    div {
+        img.grid__thumbnail {
+            height: 18rem;
+            object-fit: cover;
+        }
+    }
+}
+
+/*End - Work - Grid*/
+/*Typography - works*/
+
+.title--works {
+    h4 {
+        font-size: 1.5rem;
+        font-family: kanit-regular;
+        color: #000000;
+        padding-left: 5rem;
+        padding-top: 2rem;
+        text-decoration: underline;
+    }
+}
+
+.title--works {
+    h3 {
+        font-size: 1rem;
+        font-family: kanit-light;
+        color: $color-copy-grey;
+        padding-left: 5rem;
+        padding-top: 0.3rem;
+    }
+}
+
+.grid__container-works {
+    .grid__item {
+        div.card-body {
+            a {
+                font-weight: bold;
+                font-family: kanit-light;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.grid__container-works {
+    .grid__item {
+        div.card {
+            display: flex;
+            justify-self: center;
+            border: 0.5px solid gray;
+            margin: 1rem;
+            font-family: kanit-light;
+        }
+    }
+}

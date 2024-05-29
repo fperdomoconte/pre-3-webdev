@@ -1,0 +1,152 @@
+/*MEDIA QUERIES*/
+
+/* Desktop */
+@media screen and (min-width:1025px) {
+
+    .grid__mobile {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .grid__mobile {
+        display: none;
+    }
+
+    .grid__container-works {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title--works title--works"
+            "works-1 works-2"
+            "works-3 works-4"
+            "works-5 works-6";
+        width: 95vw;
+        /*    border: 0px solid black; */
+        row-gap: 0;
+        column-gap: 0;
+        padding: 0;
+        z-index: -3;
+    }
+
+    .main__services {
+        height: auto;
+        z-index: -5;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+    .grid__desktop {
+        display: none;
+    }
+
+    .grid__mobile {
+        z-index: -3;
+    }
+
+    .main__services {
+        height: auto;
+        z-index: -5;
+    }
+
+    .main__works {
+        z-index: -5;
+    }
+
+
+    .grid__title {
+        grid-area: grid__title;
+    }
+
+    .card-1 {
+        grid-area: card-1;
+    }
+
+    .card-2 {
+        grid-area: card-2;
+    }
+
+    .card-3 {
+        grid-area: card-3;
+    }
+
+    .card-4 {
+        grid-area: card-4;
+    }
+
+    .card-5 {
+        grid-area: card-5;
+    }
+
+    .card-6 {
+        grid-area: card-6;
+    }
+
+    .grid__container-services {
+        /*     border: 0px solid black; */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "grid__title"
+            "card-1"
+            "card-2"
+            "card-3"
+            "card-4"
+            "card-5"
+            "card-6";
+        height: auto;
+        width: 90vw;
+        /*   margin: 0 auto; */
+    }
+
+    .grid__item {
+        border: 0px solid black;
+    }
+
+    .card {
+        display: flex;
+        justify-self: center;
+        border: 0.5px solid gray;
+        margin: 1rem;
+        font-family: kanit-light;
+    }
+
+    .card div {
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .card img {
+        height: 10rem;
+    }
+
+    .grid__container-works {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title--works"
+            "works-1"
+            "works-2"
+            "works-3"
+            "works-4"
+            "works-5"
+            "works-6";
+        width: 90vw;
+        /*  border: 0px solid black; */
+        row-gap: 0;
+        column-gap: 0;
+        padding: 0;
+        z-index: -3;
+    }
+
+    .title--works {
+        border: 0px solid black;
+    }
+
+}

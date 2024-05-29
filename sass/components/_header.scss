@@ -1,0 +1,54 @@
+/*Start navigation menu - all pages*/
+header {
+    height: 3rem;
+}
+
+.navbar__list {
+    li {
+        a {
+            text-decoration: none;
+            font-family: kanit-regular;
+            font-size: $font-size-navbar;
+            color: $color-copy-grey;
+        }
+    }
+}
+
+.navbar-brand {
+    padding: 0 1rem 0 1rem;
+}
+
+.nav-item {
+    padding: 0 1rem 0 1rem;
+}
+
+.navbar__list {
+    li :hover {
+        color: $color-accent-blue;
+    }
+}
+
+.navbar__socials {
+    a {
+        padding: 0rem 1rem;
+    }
+}
+
+/* underlined logo */
+.logo {
+    text-decoration: underline;
+}
+
+/* current page bold */
+.current {
+    font-weight: bold;
+    font-family: kanit-regular;
+}
+
+img.social-networks-thumb {
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+}
+
+/*End of navigation menu - all pages*/

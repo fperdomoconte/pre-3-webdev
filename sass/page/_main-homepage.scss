@@ -1,0 +1,29 @@
+/*Start - Main content - homepage*/
+.herobox__container {
+    background-image: url(../assets/images/beach-image.jpg);
+    background-size: cover;
+    border-radius: 2rem 2rem 0rem 0rem;
+    height: 60rem;
+    display: flex;
+}
+
+.herobox__section {
+    padding-left: 5rem;
+    padding-top: 15rem;
+}
+
+/*Main fonts - homepage*/
+.herobox__section {
+    h1 {
+        font-size: 8rem;
+        font-family: kanit-regular;
+    }
+}
+
+.herobox__section {
+    h3 {
+        font-size: 2rem;
+        font-family: kanit-regular;
+    }
+}
+/*End - Main content - homepage*/

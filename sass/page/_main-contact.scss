@@ -1,0 +1,51 @@
+/*Start Contact section*/
+
+
+.contact-box__container {
+    font-family: kanit-light;
+    font-size: 0.8rem;
+    color: black;
+    background-color: rgba(225, 225, 225, 0.5);
+    margin: 0;
+}
+
+.contact-box__container {
+    h4 {
+        font-family: kanit-regular;
+        font-size: 1rem;
+        color: $color-accent-blue;
+    }
+}
+
+.contact-box__container {
+    input {
+        font-family: kanit-light;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.contact-box__container {
+    ul {
+        list-style-type: none;
+    }
+}
+
+.contact-box__container {
+    ul {
+        li {
+            text-decoration: none;
+            font-family: kanit-regular;
+        }
+    }
+}
+
+.contact-box__container {
+    iframe {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+
+/*End Contact section*/
