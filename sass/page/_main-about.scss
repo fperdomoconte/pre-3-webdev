@@ -1,18 +1,38 @@
 /*Start About section*/
 
+.main__about {
+    background-image: linear-gradient(135deg, $color-gd-grey 0%, $color-gd-green 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
 
 .grid__container-about {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 3fr;
     grid-template-areas:
         "title--about title--about"
         "about-thumbnail__container about-description__container";
-    margin: 5% 10%;
+
     background-color: $color-bg-main;
-    border: 1px solid black;
-    width: 100%;
+    border-left: 4px solid $color-copy-grey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    width: 80%;
+    margin: 5% 10%;
     padding-bottom: 2rem;
+
+    img.grid__thumbnail {
+        object-fit: cover;
+        height: 20rem;
+        width: 20rem;
+        margin: 2rem 0rem 0rem 5rem;
+        border-bottom-right-radius: 5rem;
+    }
 }
 
 .title--about {
@@ -24,44 +44,15 @@
     border-bottom: 1px solid black;
 }
 
-.main__about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
 .about-thumbnail__container {
     grid-area: about-thumbnail__container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-description__container {
     grid-area: about-description__container;
-    border-left: 0px solid black;
+    border-left: 1px solid $color-bg-main;
 }
-
-.grid__container-about {
-    div.grid__item {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.grid__container-about {
-    img.grid__thumbnail {
-        object-fit: cover;
-        height: 18rem;
-        width: 18rem;
-        border: 1px solid black;
-    }
-}
-
-.about-thumbnail__container {
-    border-right: 0px solid black;
-}
-
-
 /*End About section*/

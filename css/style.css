@@ -27,7 +27,7 @@ header {
   text-decoration: none;
   font-family: kanit-regular;
   font-size: 1.25rem;
-  color: #2b2b2b;
+  color: #202020;
 }
 
 .navbar-brand {
@@ -111,7 +111,8 @@ img.social-networks-thumb {
   grid-template-rows: 1fr 3fr;
   margin: 5% 10%;
   background-color: #f1f4f1;
-  border: 1px solid black;
+  border-left: 4px solid #202020;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .grid__title {
@@ -127,9 +128,6 @@ img.social-networks-thumb {
 .grid__description {
   grid-column: 2/3;
   grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  border-left: 1px solid lightgrey;
 }
 
 .main__services {
@@ -137,25 +135,23 @@ img.social-networks-thumb {
   justify-content: center;
   width: 100%;
   height: 50rem;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2de 100%);
 }
 
 /*End - services - Grid*/
 /*Grids - Typography*/
 .grid__title h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: kanit-regular;
   color: #000000;
-  padding-left: 5rem;
-  padding-top: 2rem;
-  text-decoration: underline;
+  padding-left: 8rem;
 }
 
 .grid__title h3 {
   font-size: 1rem;
   font-family: kanit-light;
-  color: #2b2b2b;
-  padding-left: 5rem;
-  padding-top: 0.3rem;
+  color: #202020;
+  padding-left: 8rem;
 }
 
 .grid__title a {
@@ -166,12 +162,16 @@ img.social-networks-thumb {
   font-weight: 500;
 }
 
+.grid__description {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #f1f4f1;
+}
 .grid__description p {
   width: 70%;
-  text-align: justify;
+  text-align: left;
   font-family: kanit-light;
-  color: black;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 .grid__list ul {
@@ -273,7 +273,7 @@ img.social-networks-thumb {
 .title--works h3 {
   font-size: 1rem;
   font-family: kanit-light;
-  color: #2b2b2b;
+  color: #202020;
   padding-left: 5rem;
   padding-top: 0.3rem;
 }
@@ -294,16 +294,33 @@ img.social-networks-thumb {
 }
 
 /*Start About section*/
+.main__about {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2de 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
 .grid__container-about {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "title--about title--about" "about-thumbnail__container about-description__container";
-  margin: 5% 10%;
   background-color: #f1f4f1;
-  border: 1px solid black;
-  width: 100%;
+  border-left: 4px solid #202020;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 5% 10%;
   padding-bottom: 2rem;
+}
+.grid__container-about img.grid__thumbnail {
+  object-fit: cover;
+  height: 20rem;
+  width: 20rem;
+  margin: 2rem 0rem 0rem 5rem;
+  border-bottom-right-radius: 5rem;
 }
 
 .title--about {
@@ -315,39 +332,16 @@ img.social-networks-thumb {
   border-bottom: 1px solid black;
 }
 
-.main__about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
-
 .about-thumbnail__container {
   grid-area: about-thumbnail__container;
-}
-
-.about-description__container {
-  grid-area: about-description__container;
-  border-left: 0px solid black;
-}
-
-.grid__container-about div.grid__item {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.grid__container-about img.grid__thumbnail {
-  object-fit: cover;
-  height: 18rem;
-  width: 18rem;
-  border: 1px solid black;
-}
-
-.about-thumbnail__container {
-  border-right: 0px solid black;
+.about-description__container {
+  grid-area: about-description__container;
+  border-left: 1px solid #f1f4f1;
 }
 
 /*End About section*/

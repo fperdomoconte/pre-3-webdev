@@ -5,7 +5,8 @@
     grid-template-rows: 1fr 3fr;
     margin: 5% 10%;
     background-color: $color-bg-main;
-    border: 1px solid black;
+    border-left: 4px solid $color-copy-grey;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .grid__title {
@@ -21,9 +22,6 @@
 .grid__description {
     grid-column: 2/3;
     grid-row: 2/3;
-    display: flex;
-    justify-content: center;
-    border-left: 1px solid lightgrey;
 }
 
 .main__services {
@@ -31,5 +29,6 @@
     justify-content: center;
     width: 100%;
     height: 50rem;
+    background-image: linear-gradient(135deg, $color-gd-grey 0%, $color-gd-green 100%);
 }
 /*End - services - Grid*/

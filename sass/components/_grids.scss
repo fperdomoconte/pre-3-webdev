@@ -1,12 +1,10 @@
 /*Grids - Typography*/
 .grid__title {
     h4 {
-        font-size: 1.5rem;
+        font-size: $font-size-subtitle;
         font-family: kanit-regular;
-        color: #000000;
-        padding-left: 5rem;
-        padding-top: 2rem;
-        text-decoration: underline;
+        color: $color-copy-black;
+        padding-left: 8rem;
     }
 }
 
@@ -15,8 +13,7 @@
         font-size: 1rem;
         font-family: kanit-light;
         color: $color-copy-grey;
-        padding-left: 5rem;
-        padding-top: 0.3rem;
+        padding-left: 8rem;
     }
 }
 
@@ -35,12 +32,15 @@
 }
 
 .grid__description {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $color-bg-main;
+
     p {
         width: 70%;
-        text-align: justify;
+        text-align: left;
         font-family: kanit-light;
-        color: black;
-        padding-top: 2.5rem;
+        padding-top: 2rem;
     }
 }
 
