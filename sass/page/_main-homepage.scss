@@ -1,29 +1,21 @@
 /*Start - Main content - homepage*/
-.herobox__container {
+.herobox__container-homepage {
     background-image: url(../assets/images/beach-image.jpg);
     background-size: cover;
     border-radius: 2rem 2rem 0rem 0rem;
     height: 60rem;
-    display: flex;
 }
 
-.herobox__section {
-    padding-left: 5rem;
-    padding-top: 15rem;
-}
+.title--homepage {
+    padding: 15rem 0 0 5rem;
+    font-family: kanit-regular;
 
-/*Main fonts - homepage*/
-.herobox__section {
     h1 {
-        font-size: 8rem;
-        font-family: kanit-regular;
+        font-size: $font-size-title;
     }
-}
 
-.herobox__section {
     h3 {
-        font-size: 2rem;
-        font-family: kanit-regular;
+        font-size: $font-size-subtitle;
     }
 }
 /*End - Main content - homepage*/

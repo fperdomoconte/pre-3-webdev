@@ -15,8 +15,8 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 3fr;
     grid-template-areas:
-        "title--about title--about"
-        "about-thumbnail__container about-description__container";
+        "title__about title__about"
+        "about-img__container about-description__container";
 
     background-color: $color-bg-main;
     border-left: 4px solid $color-copy-grey;
@@ -26,26 +26,35 @@
     margin: 5% 10%;
     padding-bottom: 2rem;
 
-    img.grid__thumbnail {
+    img.about-img {
         object-fit: cover;
         height: 20rem;
         width: 20rem;
         margin: 2rem 0rem 0rem 5rem;
         border-bottom-right-radius: 5rem;
     }
+
 }
 
-.title--about {
-    grid-area: title--about;
+.title__about {
+    grid-area: title__about;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     border-bottom: 1px solid black;
+
+    h4 {
+        padding-left: 8rem;
+    }
+
+    h3 {
+        padding-left: 8rem;
+    }
 }
 
-.about-thumbnail__container {
-    grid-area: about-thumbnail__container;
+.about-img__container {
+    grid-area: about-img__container;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,5 +63,12 @@
 .about-description__container {
     grid-area: about-description__container;
     border-left: 1px solid $color-bg-main;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        padding-top: 2rem;
+    }
 }
+
 /*End About section*/

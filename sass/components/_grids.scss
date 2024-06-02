@@ -1,33 +1,20 @@
 /*Grids - Typography*/
 .grid__title {
+    a {
+        text-decoration: none;
+    }
+
     h4 {
+        font-weight: 500;
         font-size: $font-size-subtitle;
         font-family: kanit-regular;
         color: $color-copy-black;
-        padding-left: 8rem;
     }
-}
 
-.grid__title {
     h3 {
         font-size: 1rem;
         font-family: kanit-light;
         color: $color-copy-grey;
-        padding-left: 8rem;
-    }
-}
-
-.grid__title {
-    a {
-        text-decoration: none;
-    }
-}
-
-.grid__title {
-    a {
-        h4 {
-            font-weight: 500;
-        }
     }
 }
 
