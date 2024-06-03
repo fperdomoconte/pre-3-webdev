@@ -436,11 +436,53 @@ img.social-networks-thumb {
     margin: 1rem 0 0 0;
     justify-self: center;
   }
+  .main__about {
+    height: auto;
+    background-image: linear-gradient(180deg, #f5f7fa 0%, #1F4E95 100%);
+    position: relative;
+    z-index: -5;
+  }
+  .main__about .grid__container-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title__about" "about-img__container" "about-description__container";
+    border-left: 0 solid transparent;
+    padding: 0;
+    background-color: #f1f4f1;
+  }
+  .main__about .grid__container-about img.about-img {
+    border-bottom-right-radius: 0;
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem 0 0 0;
+  }
+  .main__about .grid__container-about .title__about {
+    height: 1rem;
+    border-bottom: 0 solid black;
+    margin-top: 2rem;
+    justify-self: center;
+  }
+  .main__about .grid__container-about .title__about h4 {
+    display: none;
+  }
+  .main__about .grid__container-about .title__about h3 {
+    padding-left: 0;
+    font-size: 2rem;
+    font-family: kanit-regular;
+  }
+  .main__about .grid__container-about .about-description__container {
+    border-left: 0 solid #f1f4f1;
+    padding: 0;
+    align-items: center;
+  }
+  .main__about .grid__container-about .about-img__container {
+    grid-area: about-img__container;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
   .grid__title h4 {
     font-size: 1.1rem;
-  }
-  .grid__title h3 {
-    font-size: 0.9rem;
   }
 }
 /* Mobile */
@@ -536,23 +578,50 @@ img.social-networks-thumb {
     margin: 1rem 0 0 0;
     justify-self: center;
   }
-  .grid__container-about {
+  .main__about {
+    height: auto;
+    background-image: linear-gradient(180deg, #f5f7fa 0%, #1F4E95 100%);
+    position: relative;
+    z-index: -5;
+  }
+  .main__about .grid__container-about {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "title__about" "about-img__container" "about-description__container";
+    border-left: 0 solid transparent;
+    padding: 0;
+    background-color: #f1f4f1;
   }
-  .grid__container-about img.about-img {
-    object-fit: cover;
-    height: 18rem;
-    width: 18rem;
-    margin: 2rem 0rem 0rem 0rem;
-    border-bottom-right-radius: 0rem;
+  .main__about .grid__container-about img.about-img {
+    border-bottom-right-radius: 0;
+    height: 15rem;
+    width: 15rem;
+    margin: 2rem 0 0 0;
   }
-  .grid__container-about .title__about h4 {
-    padding: 0 1rem 0 1rem;
+  .main__about .grid__container-about .title__about {
+    height: 1rem;
+    border-bottom: 0 solid black;
+    margin-top: 2rem;
+    justify-self: center;
   }
-  .grid__container-about .title__about h3 {
-    padding: 1rem 1rem 0 1rem;
+  .main__about .grid__container-about .title__about h4 {
+    display: none;
+  }
+  .main__about .grid__container-about .title__about h3 {
+    padding-left: 0;
+    font-size: 2rem;
+    font-family: kanit-regular;
+  }
+  .main__about .grid__container-about .about-description__container {
+    border-left: 0 solid #f1f4f1;
+    padding: 0;
+    align-items: center;
+  }
+  .main__about .grid__container-about .about-img__container {
+    grid-area: about-img__container;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   .grid__title h4 {
     font-size: 1.1rem;
