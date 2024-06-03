@@ -2,91 +2,90 @@
 .main__works {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 50rem;
     background-image: linear-gradient(135deg, $color-gd-grey 0%, $color-gd-green 100%);
 
-}
+    .grid__container-works {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "title--works title--works title--works"
+            "works-card1 works-card2 works-card3";
 
-.grid__container-works {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas:
-        "title--works title--works title--works"
-        "works-card1 works-card2 works-card3";
+        background-color: $color-bg-main;
+        border-left: 4px solid $color-copy-grey;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    background-color: $color-bg-main;
-    border-left: 4px solid $color-copy-grey;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin: 5% 10%;
 
-    width: 80%;
-    margin: 5% 10%;
+        .title--works {
+            grid-area: title--works;
+            height: 8rem;
 
-    .card {
-        margin: 3rem 0 5rem 8rem;
-        height: auto;
-        border-top: 5px solid black;
-        border-radius: 0;
-        font-family: kanit-regular;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 1px solid black;
 
-        a {
-            text-decoration: none;
-            color: $color-copy-grey ;
-            font-size: $font-size-secondary ;
+            h4 {
+                padding-left: 8rem;
+            }
 
-            &:hover {
-                text-decoration: underline;
+            h3 {
+                padding-left: 8rem;
             }
         }
 
-        p {
-            font-size: $font-size-description;
-            margin: 1rem 0 0rem 0;
-        }
-
-        h6 {
-            font-size: $font-size-description ;
-            margin: 1rem 0 2rem 0;
-        }
-
-        img {
+        .card {
+            margin: 3rem 0 5rem 8rem;
+            height: auto;
+            border-top: 5px solid black;
             border-radius: 0;
-            object-fit: cover;
+            font-family: kanit-regular;
+
+            a {
+                text-decoration: none;
+                color: $color-copy-grey ;
+                font-size: $font-size-secondary ;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            p {
+                font-size: $font-size-description;
+                margin: 1rem 0 0rem 0;
+            }
+
+            h6 {
+                font-size: $font-size-description ;
+                margin: 1rem 0 2rem 0;
+            }
+
+            img {
+                border-radius: 0;
+                object-fit: cover;
+            }
+
+            &.works-card1 {
+                grid-area: works-card1;
+            }
+
+            &.works-card2 {
+                grid-area: works-card2;
+            }
+
+            &.works-card3 {
+                grid-area: works-card3;
+            }
         }
     }
-
-}
-
-.title--works {
-    grid-area: title--works;
-    height: 8rem;
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px solid black;
-
-    h4 {
-        padding-left: 8rem;
-    }
-
-    h3 {
-        padding-left: 8rem;
-    }
-}
-
-.works-card1 {
-    grid-area: works-card1;
-}
-
-.works-card2 {
-    grid-area: works-card2;
-}
-
-.works-card3 {
-    grid-area: works-card3;
 }
 
 /*End - Work - Grid*/
