@@ -42,11 +42,12 @@
         }
 
         .card {
-            margin: 3rem 0 5rem 8rem;
-            height: auto;
-            border-top: 5px solid black;
+            margin: 3rem 0 5rem 1rem;
+            height: auto;            
+            border-bottom: 5px solid black;
             border-radius: 0;
             font-family: kanit-regular;
+            justify-self: center;
 
             a {
                 text-decoration: none;
