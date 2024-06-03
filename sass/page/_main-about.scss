@@ -1,5 +1,4 @@
 /*Start About section*/
-
 .main__about {
     display: flex;
     justify-content: center;
@@ -7,70 +6,67 @@
     height: 50rem;
     background-image: linear-gradient(135deg, $color-gd-grey 0%, $color-gd-green 100%);
 
-}
+
+    .grid__container-about {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "title__about title__about"
+            "about-img__container about-description__container";
+
+        margin: 5% 10%;
+        border-left: 4px solid $color-copy-grey;
+
+        background-color: $color-bg-main;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        img.about-img {
+            object-fit: cover;
+            height: 20rem;
+            width: 20rem;
+            margin: 2rem 0rem 0rem 5rem;
+            border-bottom-right-radius: 5rem;
+        }
 
 
-.grid__container-about {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas:
-        "title__about title__about"
-        "about-img__container about-description__container";
 
-    margin: 5% 10%;
-    border-left: 4px solid $color-copy-grey;
+        .title__about {
+            grid-area: title__about;
+            height: 8rem;
 
-    background-color: $color-bg-main;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
 
-    img.about-img {
-        object-fit: cover;
-        height: 20rem;
-        width: 20rem;
-        margin: 2rem 0rem 0rem 5rem;
-        border-bottom-right-radius: 5rem;
+            border-bottom: 1px solid black;
+
+            h4 {
+                padding-left: 8rem;
+            }
+
+            h3 {
+                padding-left: 8rem;
+            }
+        }
+
+        .about-description__container {
+            grid-area: about-description__container;
+            border-left: 1px solid $color-bg-main;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0 0 5rem;
+        }
+
+        .about-img__container {
+            grid-area: about-img__container;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0 0 0;
+        }
     }
 
 }
-
-.title__about {
-    grid-area: title__about;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-
-    border-bottom: 1px solid black;
-
-    h4 {
-        padding-left: 8rem;
-    }
-
-    h3 {
-        padding-left: 8rem;
-    }
-}
-
-.about-description__container {
-    grid-area: about-description__container;
-    border-left: 1px solid $color-bg-main;
-    display: flex;
-    flex-direction: column;
-
-    p {
-        padding: 5rem 0 0 5rem;
-    }
-}
-
-.about-img__container {
-    grid-area: about-img__container;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 
 /*End About section*/

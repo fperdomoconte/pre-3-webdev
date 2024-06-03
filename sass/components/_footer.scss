@@ -1,16 +1,19 @@
 /*Footer - all pages*/
 .footer__container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-}
+    align-items: center;
 
-.footer__container {
+    background-color: $color-copy-grey;
+    color: $color-copy-gray;
+   
+    
     h6 {
-        font-size: $font-size-secondary;
-        font-family: kanit-regular;
-        height: 5%;
-        padding: 0.8rem 0rem;
+        font-size: $font-size-description;
+        font-family: kanit-light;
+        height: 15rem;
+        padding: 0.8rem 0.8rem;
     }
 }
-
 /*End Footer - all pages*/

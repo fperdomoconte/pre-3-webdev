@@ -24,7 +24,7 @@
     margin: 5% 10%;
 
     .card {
-        margin: 5rem 0 5rem 8rem;
+        margin: 3rem 0 5rem 8rem;
         height: auto;
         border-top: 5px solid black;
         border-radius: 0;
@@ -60,6 +60,8 @@
 
 .title--works {
     grid-area: title--works;
+    height: 8rem;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
