@@ -116,6 +116,77 @@
 
     }
 
+    //Contact
+    .main__contact {
+        height: auto;
+        background-image: linear-gradient(180deg, $color-gd-grey 0%, $color-gd-blue 100%);
+
+        .grid__container-contact {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "title__contact"
+                "contact-map__container"
+                "contact-form__container";
+            border-left: 0 solid transparent;
+            background-color: transparent;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+            .grid__title.title__contact {
+                align-content: center;
+                border-bottom: 0 solid black;
+                padding: 0;
+                margin: 0;
+
+                h4 {
+                    padding-left: 0;
+                }
+
+                h3 {
+                    padding-left: 0;
+                }
+            }
+
+            .contact-map__container {
+                justify-self: center;
+                padding: 0;
+                margin: 0;
+
+                iframe {
+                    height: 30rem;
+                    width: 30rem;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+            }
+
+            .contact-form__container {
+                padding: 1rem 0rem 1rem 6rem;
+                justify-self: center;
+
+                label {
+                    width: 4rem;
+                }
+
+                input {
+                    margin-bottom: 0.5rem;
+                    width: 25rem;
+                    justify-content: center;
+                }
+
+                textarea {
+                    width: 25rem;
+                }
+            }
+
+        }
+    }
+
 
     .grid__title {
 
@@ -236,12 +307,11 @@
             box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 
             .title--works {
-                justify-self: center;
                 border-bottom: 0 solid black;
                 height: 1rem;
 
                 h4 {
-                    padding-left: 0;
+                    padding-left: 2rem;
                 }
 
                 h3 {
@@ -285,16 +355,15 @@
                 height: 1rem;
                 border-bottom: 0 solid black;
                 margin-top: 2rem;
-                justify-self: center;
 
                 h4 {
                     display: none;
                 }
 
                 h3 {
-                    padding-left: 0;
-                    font-size: $font-size-subtitle;
+                    padding-left: 3rem;
                     font-family: kanit-regular;
+                    font-size: $font-size-secondary;
                 }
             }
 
@@ -312,6 +381,82 @@
             }
         }
 
+    }
+
+    //Contact
+    .main__contact {
+        height: auto;
+        background-image: linear-gradient(180deg, $color-gd-grey 0%, $color-gd-blue 100%);
+
+        .grid__container-contact {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "title__contact"
+                "contact-map__container"
+                "contact-form__container";
+            border-left: 0 solid transparent;
+            background-color: transparent;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+            .grid__title.title__contact {
+                border-bottom: 0 solid black;
+                padding: 0;
+                margin: 0;
+
+                h4 {
+                    display: none;
+                }
+
+                h3 {
+                    padding-left: 2rem;
+                    
+                    font-family: kanit-regular;
+                    font-size: $font-size-secondary;
+                }
+            }
+
+            .contact-map__container {
+                justify-self: center;
+                padding: 0;
+                margin: 0;
+
+                iframe {
+                    height: 20rem;
+                    width: 20rem;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+            }
+
+            .contact-form__container {
+                padding: 1rem 0rem 1rem 3rem;
+                justify-self: center;
+
+                label {
+                    width: 4rem;
+                }
+
+                input {
+                    margin-bottom: 0.5rem;
+                    width: 19rem;
+                    justify-content: center;
+                    &.submit{
+                        width: 19rem;
+                    }
+                }
+
+                textarea {
+                    width: 19rem;
+                }
+            }
+
+        }
     }
 
     .grid__title {

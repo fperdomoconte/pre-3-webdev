@@ -67,12 +67,6 @@
             grid-area: contact-form__container;
             font-family: kanit-light;
             font-size: $font-size-description;
-
-
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-
             padding: 1rem 15rem 1rem 0;
 
             label{
@@ -87,6 +81,9 @@
                 border: 0px solid black;
                 &.submit{
                     width: 30rem;
+                }
+                &:autofill{
+                    border: 1px solid $color-gd-blue;
                 }
             }
 
