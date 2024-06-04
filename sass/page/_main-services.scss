@@ -20,39 +20,41 @@
 
         background-color: $color-bg-main;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
 
-    .title__services--desktop {
-        grid-area: title__services--desktop;
-        height: 8rem;
-
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-
-        border-bottom: 1px solid black;
-
-        h4 {
-            padding-left: 8rem;
+        .title__services--desktop {
+            grid-area: title__services--desktop;
+            height: 8rem;
+    
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+    
+            border-bottom: 1px solid black;
+    
+            h4 {
+                padding-left: 8rem;
+            }
+    
+            h3 {
+                padding-left: 8rem;
+            }
         }
-
-        h3 {
-            padding-left: 8rem;
+    
+        .description__container-services {
+            grid-area: description__container-services;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0 0 5rem;
+        }
+    
+        .grid__list {
+            grid-area: grid__list;
+            padding-top: 1rem;
         }
     }
 
-    .description__container-services {
-        grid-area: description__container-services;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 0 0 5rem;
-    }
-
-    .grid__list {
-        grid-area: grid__list;
-        padding-top: 1rem;
-    }
+   
 }
 
 /*End - services - Grid*/

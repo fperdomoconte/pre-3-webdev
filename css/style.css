@@ -114,7 +114,7 @@ img.social-networks-thumb {
   background-color: #f1f4f1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.main__services .title__services--desktop {
+.main__services .grid__container-services.grid--desktop .title__services--desktop {
   grid-area: title__services--desktop;
   height: 8rem;
   display: flex;
@@ -123,19 +123,19 @@ img.social-networks-thumb {
   justify-content: center;
   border-bottom: 1px solid black;
 }
-.main__services .title__services--desktop h4 {
+.main__services .grid__container-services.grid--desktop .title__services--desktop h4 {
   padding-left: 8rem;
 }
-.main__services .title__services--desktop h3 {
+.main__services .grid__container-services.grid--desktop .title__services--desktop h3 {
   padding-left: 8rem;
 }
-.main__services .description__container-services {
+.main__services .grid__container-services.grid--desktop .description__container-services {
   grid-area: description__container-services;
   display: flex;
   flex-direction: column;
   padding: 1rem 0 0 5rem;
 }
-.main__services .grid__list {
+.main__services .grid__container-services.grid--desktop .grid__list {
   grid-area: grid__list;
   padding-top: 1rem;
 }
@@ -488,7 +488,6 @@ img.social-networks-thumb {
 /* Mobile */
 @media screen and (max-width: 768px) {
   .main__services {
-    width: 100%;
     height: auto;
     background-image: linear-gradient(180deg, #f5f7fa 0%, #1F4E95 100%);
     position: relative;
